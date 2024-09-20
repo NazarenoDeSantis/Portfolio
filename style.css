@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Menú */
+nav ul {
+    list-style: none;
+    background-color: #333; /* Fondo del menú */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Colores para las secciones */
+#presentacion {
+    background-color: #e0f7fa; /* Azul claro */
+}
+
+#informacion-personal {
+    background-color: #fff3e0; /* Naranja claro */
+}
+
+#informacion-laboral {
+    background-color: #fce4ec; /* Rosa claro */
+}
+
+#conocimientos {
+    background-color: #e8f5e9; /* Verde claro */
+}
+
+#proyectos {
+    background-color: #e3f2fd; /* Azul suave */
+}
+
+#redes {
+    background-color: #ffe0b2; /* Amarillo suave */
+}
+
+#contacto {
+    background-color: #f1f8e9; /* Verde menta */
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #333;
+}
+
+/* Estilo de la imagen */
+#presentacion img {
+    width: 207.8px; /* Reducido 5 veces */
+    height: 291px;  /* Reducido 5 veces */
+    border-radius: 0; /* Sin bordes redondeados */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+form button:hover {
+    background-color: #555;
+}
