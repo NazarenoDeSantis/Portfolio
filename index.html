@@ -14,7 +14,7 @@
         <li><a href="#informacion">Información</a></li>
         <li><a href="#conocimientos">Conocimientos</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#redes">Redes</a></li>
+        <li><a href="#redes">Redes Sociales</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -181,7 +181,7 @@
 
     <!-- Redes -->
     <section id="redes">
-      <h2>Mis redes</h2>
+      <h2>Mis redes sociales</h2>
       <a href="https://www.linkedin.com/in/nazarenodesantis" target="_blank"
         ><img src="img\linkedin.png" alt="LinkedIn"
       /></a>
@@ -198,15 +198,23 @@
     <!-- Formulario de contacto -->
     <section id="contacto">
       <h2>Contacto</h2>
-      <form id="formularioContacto">
+
+      <!-- action: endpoint de Formspree — reemplazá TU_ID_FORMSPREE con el ID de tu cuenta -->
+      <form id="formularioContacto" action="https://formspree.io/f/xzdjoqbp" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
+
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
         <button type="submit">Enviar</button>
       </form>
+
+      <!-- Mensaje de respuesta (oculto por defecto, lo muestra el script) -->
+      <p id="mensajeRespuesta" style="display: none;"></p>
     </section>
 
     <script src="script.js"></script>
