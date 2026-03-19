@@ -1,17 +1,69 @@
-/* Estilos generales */
+/* =============================================
+   ESTILOS GENERALES
+   ============================================= */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0f172a; /* Fondo oscuro principal */
+    color: #e2e8f0;            /* Texto claro para contraste */
 }
 
-/* Menú */
+
+/* =============================================
+   LAYOUT DE SECCIONES
+   Centra el contenido y limita el ancho máximo
+   ============================================= */
+
+section {
+    max-width: 1000px;
+    margin: 40px auto; /* Centrado horizontal + separación vertical */
+    padding: 20px;
+}
+
+
+/* =============================================
+   TIPOGRAFÍA
+   ============================================= */
+
+h1, h2, h3 {
+    color: #38bdf8; /* Azul celeste para destacar títulos */
+}
+
+h2 {
+    border-bottom: 2px solid #38bdf8; /* Línea separadora bajo cada sección */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6; /* Mejora legibilidad del texto */
+}
+
+
+/* =============================================
+   LISTAS GENERALES
+   ============================================= */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+/* =============================================
+   MENÚ DE NAVEGACIÓN
+   ============================================= */
+
 nav ul {
     list-style: none;
-    background-color: #333; /* Fondo del menú */
+    background-color: #1e293b; /* Fondo más claro que el body */
     padding: 10px;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -20,66 +72,71 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #e2e8f0;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s; /* Transición suave al cambiar de color */
+    transition: color 0.3s; /* Transición suave al pasar el mouse */
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Color al pasar el mouse */
+    color: #38bdf8; /* Resalta el enlace activo */
 }
 
-/* Secciones */
-section {
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-}
 
-/* Colores para las secciones */
-#presentacion {
-    background-color: #e0f7fa; /* Azul claro */
-}
+/* =============================================
+   IMAGEN DE PRESENTACIÓN
+   ============================================= */
 
-#informacion-personal {
-    background-color: #fff3e0; /* Naranja claro */
-}
-
-#informacion-laboral {
-    background-color: #fce4ec; /* Rosa claro */
-}
-
-#conocimientos {
-    background-color: #e8f5e9; /* Verde claro */
-}
-
-#proyectos {
-    background-color: #e3f2fd; /* Azul suave */
-}
-
-#redes {
-    background-color: #ffe0b2; /* Amarillo suave */
-}
-
-#contacto {
-    background-color: #f1f8e9; /* Verde menta */
-}
-
-/* Encabezados */
-h1, h2 {
-    color: #333;
-}
-
-/* Estilo de la imagen */
 #presentacion img {
-    width: 207.8px; /* Reducido 5 veces */
-    height: 291px;  /* Reducido 5 veces */
-    border-radius: 0; /* Sin bordes redondeados */
+    width: 207.8px;
+    height: 291px;
+    border-radius: 0;
 }
 
-/* Estilos del formulario */
+
+/* =============================================
+   SECCIÓN PROYECTOS
+   Cada proyecto tiene separación visual clara
+   ============================================= */
+
+#proyectos h3 {
+    margin-top: 30px;
+}
+
+#proyectos p {
+    margin-bottom: 10px;
+}
+
+#proyectos a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+#proyectos a:hover {
+    text-decoration: underline;
+}
+
+
+/* =============================================
+   SECCIÓN CONOCIMIENTOS
+   Grid de dos columnas para listar tecnologías
+   ============================================= */
+
+#conocimientos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* =============================================
+   FORMULARIO DE CONTACTO
+   ============================================= */
+
 form {
     display: flex;
     flex-direction: column;
@@ -87,23 +144,27 @@ form {
     margin: 0 auto;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #334155;
+    background-color: #1e293b; /* Fondo oscuro coherente con el tema */
+    color: #e2e8f0;
 }
 
 form button {
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #38bdf8;
+    color: #0f172a; /* Texto oscuro sobre botón claro */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave */
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #7dd3fc; /* Versión más clara al pasar el mouse */
 }
