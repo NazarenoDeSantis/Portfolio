@@ -51,4 +51,7 @@ function mostrarMensaje(texto, tipo) {
   mensajeRespuesta.textContent = texto;
   mensajeRespuesta.style.display = "block";
   mensajeRespuesta.style.color = tipo === "exito" ? "#38bdf8" : "#f87171";
+
+  // Desplaza la vista hasta el mensaje para que el usuario lo vea
+  mensajeRespuesta.scrollIntoView({ behavior: "smooth", block: "center" });
 }
