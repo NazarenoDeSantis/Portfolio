@@ -5,7 +5,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #0f172a; /* Fondo oscuro principal */
+    background-color: #000000; /* Fondo oscuro principal */
     color: #e2e8f0;            /* Texto claro para contraste */
 }
 
@@ -27,11 +27,11 @@ section {
    ============================================= */
 
 h1, h2, h3 {
-    color: #38bdf8; /* Azul celeste para destacar títulos */
+    color: #00aaff; /* Azul celeste para destacar títulos */
 }
 
 h2 {
-    border-bottom: 2px solid #38bdf8; /* Línea separadora bajo cada sección */
+    border-bottom: 2px solid #00aaff; /* Línea separadora bajo cada sección */
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
@@ -60,7 +60,7 @@ li {
 
 nav ul {
     list-style: none;
-    background-color: #1e293b; /* Fondo más claro que el body */
+    background-color: #111111; /* Fondo más claro que el body */
     padding: 10px;
     text-align: center;
     margin: 0;
@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #38bdf8; /* Resalta el enlace activo */
+    color: #00aaff; /* Resalta el enlace activo */
 }
 
 
@@ -110,7 +110,7 @@ nav ul li a:hover {
 #proyectos a {
     display: inline-block;
     margin-top: 10px;
-    color: #38bdf8;
+    color: #00aaff;
     text-decoration: none;
 }
 
@@ -149,15 +149,15 @@ form textarea {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #334155;
-    background-color: #1e293b; /* Fondo oscuro coherente con el tema */
+    border: 1px solid #222222;
+    background-color: #111111; /* Fondo oscuro coherente con el tema */
     color: #e2e8f0;
 }
 
 form button {
     padding: 10px;
-    background-color: #38bdf8;
-    color: #0f172a; /* Texto oscuro sobre botón claro */
+    background-color: #00aaff;
+    color: #000000; /* Texto oscuro sobre botón claro */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -166,5 +166,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #7dd3fc; /* Versión más clara al pasar el mouse */
+    background-color: #33bbff; /* Versión más clara al pasar el mouse */
 }
