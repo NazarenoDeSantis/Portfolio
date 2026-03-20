@@ -60,7 +60,7 @@ li {
 
 nav ul {
     list-style: none;
-    background-color: #00aaff; /* Azul vivo para destacar el nav del fondo negro */
+    background-color: #2d2d2d; /* Gris oscuro del header */
     padding: 10px;
     text-align: center;
     margin: 0;
@@ -72,14 +72,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000; /* Texto negro sobre fondo azul */
+    color: #e2e8f0; /* Texto claro sobre fondo gris oscuro */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s; /* Transición suave al pasar el mouse */
 }
 
 nav ul li a:hover {
-    color: #ffffff; /* Blanco al pasar el mouse */
+    color: #00aaff; /* Azul vivo al pasar el mouse */
 }
 
 

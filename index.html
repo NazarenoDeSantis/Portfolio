@@ -111,8 +111,20 @@
       <p>Aplicación web para la gestión de turnos en salones de belleza y estética. Permite administrar clientes, servicios, agendas y pagos, optimizando la operación del negocio.</p>
       <ul>
         <li><strong>Tecnologías:</strong> React, Node.js, Express, Firebase (Firestore), JWT, Tailwind CSS</li>
-        <li><strong>Arquitectura:</strong> Clean Architecture, Repository Pattern, multi-tenant</li>
-        <li><strong>Features:</strong> autenticación con JWT y Google OAuth, gestión de turnos, integración de pagos (Mercado Pago), generación de reportes y soporte PWA (offline)</li>
+        <li><strong>Arquitectura:</strong> Clean Architecture, Repository Pattern, multi-tenant — múltiples sucursales por usuario, cada una con sus propias colecciones (turnos, ventas, clientes, empleados, productos, servicios, promociones, suscripciones)</li>
+        <li><strong>Features:</strong>
+          <ul>
+            <li>Autenticación con JWT y Google OAuth</li>
+            <li>Gestión de turnos, clientes, servicios, productos y promociones</li>
+            <li>Sección pública de comercios adheridos para tomar turnos online</li>
+            <li>Configuración de agendas por empleado o por cantidad de agendas simultáneas</li>
+            <li>Configuración de horarios de atención por día, semana o mes, con breaks y horarios distintos por día</li>
+            <li>Turnos con o sin seña (integración de pagos con Mercado Pago)</li>
+            <li>Envío de mails automáticos de confirmación y cancelación de turnos</li>
+            <li>Exportación de reportes a Excel (clientes, productos y servicios, ventas y turnos)</li>
+            <li>Múltiples modos visuales: modo oscuro, modo barbería</li>
+          </ul>
+        </li>
         <li><strong>Rol:</strong> Desarrollo fullstack completo (frontend, backend, arquitectura y despliegue)</li>
       </ul>
       <a href="https://salonapp.com.ar" target="_blank">🔗 SalonApp</a>
