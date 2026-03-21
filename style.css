@@ -118,6 +118,16 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Ícono redondo de proyecto */
+.proyecto-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;         /* Hace la imagen circular */
+    object-fit: cover;          /* Recorta sin deformar */
+    vertical-align: middle;     /* Alinea con el texto */
+    margin-right: 8px;
+}
+
 
 /* =============================================
    SECCIÓN CONOCIMIENTOS
