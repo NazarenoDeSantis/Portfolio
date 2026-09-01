@@ -9,7 +9,17 @@
   <body>
     <!-- Menú -->
     <nav>
-      <ul>
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        <span class="menu-toggle-icono">☰</span>
+      </button>
+      <ul id="menu-principal">
         <li><a href="#presentacion">Presentación</a></li>
         <li><a href="#informacion">Información</a></li>
         <li><a href="#conocimientos">Conocimientos</a></li>

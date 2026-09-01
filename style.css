@@ -84,6 +84,62 @@ nav ul li a:hover {
 
 
 /* =============================================
+   BOTÓN MENÚ HAMBURGUESA
+   Oculto en desktop, visible solo en mobile
+   ============================================= */
+
+.menu-toggle {
+    display: none;
+    width: 100%;
+    background-color: #2d2d2d;
+    border: none;
+    color: #e2e8f0;
+    font-size: 28px;
+    line-height: 1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    color: #00aaff;
+}
+
+
+/* =============================================
+   RESPONSIVE: MENÚ HAMBURGUESA EN MOBILE
+   ============================================= */
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    nav ul.abierto {
+        max-height: 400px;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        border-top: 1px solid #444444;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+}
+
+
+/* =============================================
    IMAGEN DE PRESENTACIÓN
    ============================================= */
 
